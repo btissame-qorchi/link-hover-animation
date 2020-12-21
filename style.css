@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  display: grid;
+}
+.link {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #485342;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.3s ease;
+}
+.link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: #f9efe5;
+  width: 55px;
+  height: 55px;
+  transition: all 0.3s ease;
+}
+.link span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.link:hover:before {
+  width: 100%;
+  background: #f9efe5;
+}
